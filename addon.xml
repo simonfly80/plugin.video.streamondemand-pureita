@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.streamondemand-pureita-master"
+<addon id="plugin.video.streamondemand-pureita"
     name="Stream On Demand PureITA"
     version="5.3.6"
     provider-name="streamondemand-pureita">
@@ -9,10 +9,11 @@
   <extension point="xbmc.python.script" library="default.py">
     <provides>video</provides>
   </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="it">Film e serie tv on demand</summary>
-    <description lang="it">Cinema, serie tv, documentari, anime, ... tutto ciò che puoi trovare su Internet in streaming ora è sul tuo media center.</description>
+  <extension point="xbmc.addon.metadata" debug="false">
+    <summary lang="it_IT">Film e serie tv on demand</summary>
+    <description lang="it_IT">Cinema, serie tv, documentari, anime, ... tutto ciò che puoi trovare su Internet in streaming ora è sul tuo media center.</description>
     <platform>all</platform>
+    <language></language>
   </extension>
   <extension point="xbmc.service" library="library_service.py" start="login|startup">
   </extension>
