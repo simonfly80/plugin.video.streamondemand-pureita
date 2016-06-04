@@ -141,7 +141,7 @@ def search(item, texto):
         import sys
         for line in sys.exc_info():
             logger.error("%s" % line)
-        return []
+        return [] 
 
 
 def peliculasx(item):
