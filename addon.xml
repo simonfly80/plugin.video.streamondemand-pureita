@@ -14,7 +14,7 @@
     <description lang="it_IT">Cinema, serie tv, documentari, anime, ... tutto ciò che puoi trovare su Internet in streaming ora è sul tuo media center.</description>
     <platform>all</platform>
     <language></language>
-  </extension>
+  </extension> 
   <extension point="xbmc.service" library="library_service.py" start="login|startup">
   </extension>
 </addon>
