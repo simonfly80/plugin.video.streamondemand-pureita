@@ -190,7 +190,7 @@ def peliculas(item):
 
 def HomePage(item):
     import xbmc
-    xbmc.executebuiltin("ReplaceWindow(10024,plugin://plugin.video.streamondemand-pureita-master)")
+    xbmc.executebuiltin("ReplaceWindow(10024,plugin://plugin.video.streamondemand-pureita)")
 
 def episodios(item):
     def load_episodios(html, item, itemlist, lang_title):
