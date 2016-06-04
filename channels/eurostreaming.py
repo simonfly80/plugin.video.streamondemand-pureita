@@ -193,7 +193,7 @@ def serietv(item):
 
 def HomePage(item):
     import xbmc
-    xbmc.executebuiltin("ReplaceWindow(10024,plugin://plugin.video.streamondemand-pureita-master)")
+    xbmc.executebuiltin("ReplaceWindow(10024,plugin://plugin.video.streamondemand-pureita)")
 
 def search(item, texto):
     logger.info("[eurostreaming.py] " + item.url + " search " + texto)
