@@ -36,7 +36,7 @@ def isGeneric():
 
 
 def mainlist(item):
-    logger.info("streamondemand-pureita-master.soloserie mainlist")
+    logger.info("streamondemand-pureita.soloserie mainlist")
     itemlist = [Item(channel=__channel__,
                      title="[B][COLOR royalblue][SERIE TV][/COLOR][/B] [B][COLOR deepskyblue]ULTIMI EPISODI AGGIORNATI[/COLOR][/B]",
                      action="updateserietv",
@@ -114,16 +114,16 @@ def elencoserieletter(item):
 
     
 def cache_jsonpage(url):
-    print "streamondemand-pureita-master.soloserie cache_jsonpage url="+url
+    print "streamondemand-pureita.soloserie cache_jsonpage url="+url
     response = urllib.urlopen(url)
-    #print "streamondemand-pureita-master.core.scrapertools cache_jsonpage response="+ str(response)
+    #print "streamondemand-pureita.core.scrapertools cache_jsonpage response="+ str(response)
     data = json.loads(response.read())
     #print data["total_results"]
     return data
 
     
 def dailyupdateserietv(item):
-    logger.info("streamondemand-pureita-master.soloserie dailyupdateserietv")
+    logger.info("streamondemand-pureita.soloserie dailyupdateserietv")
     logger.info("[soloserie.py dailyupdateserietv url=] " + item.url)
     #print "[soloserie.py] " + item.url
     itemlist = []
@@ -260,8 +260,8 @@ def replaceshitchar(string):
     
     
 def showupdateserietv(item):
-    logger.info("streamondemand-pureita-master.soloserie showupdateserietv")
-    #logger.info("streamondemand-pureita-master.soloserie showupdateserietv item.extra="  + item.extra)
+    logger.info("streamondemand-pureita.soloserie showupdateserietv")
+    #logger.info("streamondemand-pureita.soloserie showupdateserietv item.extra="  + item.extra)
     
     extra = json.loads(item.extra)
     #from pprint import pprint
@@ -301,7 +301,7 @@ def showupdateserietv(item):
  
  
 def updateserietv(item):
-    logger.info("streamondemand-pureita-master.soloserie update serietv")
+    logger.info("streamondemand-pureita.soloserie update serietv")
     logger.info("[soloserie.py] " + item.url)
     print "[soloserie.py] " + item.url
     
@@ -347,7 +347,7 @@ def updateserietv(item):
 
     
 def singleepisodios(item):
-    logger.info("streamondemand-pureita-master.soloserie singleepisodios")
+    logger.info("streamondemand-pureita.soloserie singleepisodios")
     logger.info("[soloserie.py] " + item.url)  
     dataapi = cache_jsonpage(item.url)
   
@@ -370,8 +370,8 @@ def singleepisodios(item):
   
   
 def serietv(item):
-    #logger.info("streamondemand-pureita-master.soloserie serietv")
-    logger.info("[streamondemand-pureita-master.soloserie serietv] " + item.url)
+    #logger.info("streamondemand-pureita.soloserie serietv")
+    logger.info("[streamondemand-pureita.soloserie serietv] " + item.url)
     #print "[soloserie.py] " + item.url
     itemlist = []
 
